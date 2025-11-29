@@ -1,0 +1,188 @@
+:root{
+    font-family: system-ui, Arial;
+    --bg:#0f172a;
+    --panel:#1e293b;
+    --accent:#f8fafc;
+    --btn:#334155;
+    --btn-op:#0ea5e9;
+    --btn-func:#64748b;
+  }
+  
+  body{
+    background:var(--bg);
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+  }
+  
+  .calc{
+    width:100%;
+    max-width:450px;
+    background:var(--panel);
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+  }
+  
+  .display{
+    background:#0f172a;
+    padding:20px;
+    border-radius:12px;
+    text-align:right;
+    margin-bottom:20px;
+  }
+  
+  .expr{
+    font-size:18px;
+    color:#94a3b8;
+    height:22px;
+  }
+  
+  .result{
+    font-size:40px;
+    font-weight:bold;
+  }
+  
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+  }
+  
+  button{
+    padding:18px;
+    border-radius:12px;
+    border:0;
+    font-size:20px;
+    cursor:pointer;
+    background:var(--btn);
+    color:white;
+  }
+  
+  button.op{
+    background:var(--btn-op);
+  }
+  
+  button[data-func]{
+    background:var(--btn-func);
+  }
+  
+  button.wide{
+    grid-column:span 2;
+  }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #1e1e1e, #3c3c3c);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 40px;
+      border-radius: 18px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      animation: pop 0.8s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .photo-box {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.3);
+      transition: 0.4s ease;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    .photo-box:hover img {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      color: peru;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: green;
+      font-size: 18px;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #00d4ff;
+      color: black;
+      border: none;
+      font-size: 17px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn:hover {
+      background: #00a8cc;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        
+        /* Background image add karna */
+        background-image: url('secoun.jpg'); /* Yahan apni image ka naam daalein */
+        background-size: cover; /* Full screen cover kare */
+        background-position: center; /* Center pe set kare */
+        background-repeat: no-repeat; /* Repeat na ho */
+    }
+    
+    .container {
+        text-align: center;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.7); /* Thoda transparent background text ke liye */
+        padding: 30px;
+        border-radius: 10px;
+    }
+    
+    .photo-box img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #333;
+    }
